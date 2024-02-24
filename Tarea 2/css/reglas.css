@@ -1,0 +1,14 @@
+@media (max-width: 576px){ /*max width-576 significa mayores a 576px*/
+    .imgs{
+        padding-top: 35px;
+    }
+
+    .img-contact{
+        width:65%;
+    }
+    .all-cards{
+        padding-bottom: 110px ;
+    }
+
+    
+}

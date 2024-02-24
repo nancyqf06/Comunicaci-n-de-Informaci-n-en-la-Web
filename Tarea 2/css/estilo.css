@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital@0;1&family=Noto+Serif&family=Playfair+Display&family=Roboto+Condensed:ital,wght@0,300;1,500&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap');
+ body{
+  font-family: 'Roboto Condensed';
+ }
+.banner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed; /*efecto parallax*/
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-image: url('../imagenes/AMERICA-BUSINESS01.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.623);     
+}
+
+.logo1{
+  width: 95%;
+}
+
+/* Cambia el background del menu al hacerle scroll */
+.menu-white {
+  background-color: black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.678);
+  background-color:rgba(15, 15, 15, 0.918);
+  background-blend-mode: multiply;
+}
+
+/*********************  MENU NAV ******************************/
+.navbar{ 
+  letter-spacing: 1.5px;
+  color: #000;
+    
+}
+
+.optmenu{   
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.optmenu:hover{
+  color: #fff;
+  background-color: #2b318f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.optmenu:active{
+  background-color: white;
+  color:#0a3a86;
+}
+
+ul .dropdown-menu .optmenu1:hover{
+  background-color: #2B318F;
+  color: #fff;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+.navbar-toggler{
+  background-color: #0a3a86;
+  border: 3px solid #fff;
+}
+
+.custom-toggler.navbar-toggler{
+  border-color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cline x1='2' y1='15' x2='28' y2='15' stroke='%23ffffff' stroke-width='3'/%3E%3Cline x1='2' y1='7' x2='28' y2='7' stroke='%23ffffff' stroke-width='3'/%3E%3Cline x1='2' y1='23' x2='28' y2='23' stroke='%23ffffff' stroke-width='3'/%3E%3C/svg%3E");
+}       
+
+.navbar-nav {
+  text-align: center;
+}
+ 
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 200px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+  
+/*style scrolltop*/
+.goto-top {  
+    position: fixed;
+    bottom: 30px;
+    right: 20px;     /*para que el boton de scrolltop se ponga del lado derecho*/
+    width: 50px;
+    height: 30px;
+}
+
+.fondo-nosotros{
+    background-color:rgba(201, 194, 186, 0.304);
+}
+
+.fondo-footer{
+    background-color:#2b318f;
+}
+
+footer{
+  position:absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+.custom-shape-divider-top-1707971825 {
+    fill: #2B318F;
+    margin-top: 30px; 
+    
+}
+.custom-shape-divider-bottom-1708285280 .shape-fill {
+  fill: #2B318F;
+}
+
+.custom-shape-divider-bottom-1708285280 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px); 
+}
+
+.custom-shape-divider-bottom-1708285280 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+
+.menu-white {
+  background-color: #2B318F;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.678); 
+  background-blend-mode: multiply;
+}
+
+.titles{
+  font-weight: bold;
+}
+
+.seccion2{
+  background-color: #f7f5f4;
+  min-height: 650px;
+}
+
+.btnes{
+  background-color:#2B318F;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  border-style: none;
+  border-color: #fff;
+}
+
+.btnes1{
+  background-color:#2B318F;
+  text-decoration: none;
+  cursor: pointer;
+  border-style: none;
+  border-color: #fff;
+  font-size: 18px;
+}
+
+p, .title-style{
+  text-align:left;
+}
+
+.img-contact{
+  width: 30%;
+}
+.imgs{
+  cursor:pointer;
+}
+
+.icons{
+  width:15%;
+}
+
+.cont1{
+  display: inline;
+}
+
+.p2{
+  text-align:right;
+  display: inline;
+}
+
+.icon-redes{
+  font-size: 40px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.required {
+  color: red;
+}
+
+/*efectos a imagenes  */
+
+.thumb{
+  display: block;
+  position: relative;
+  overflow: hidden; /*es para que la imagen no tape el texto al hacerle el hover con el mouse*/
+}
+
+/*tamaño de la imagen*/
+.thumb img{
+  width:100%;
+  height: auto;
+  transition: 0.5s all ease;
+}
+
+.thumb:hover img{
+  transform: scale(1.2);
+}
+
+.card{
+  border-radius: 8px;
+  height:450px;
+  width: 300px;
+  padding:0;
+  margin: 20px auto;
+  transition-duration: 0.3s;
+
+}
+
+.card:hover{
+  scale:1.1;
+   z-index: 1;
+}
+
+/*linea sobrante si no se activa la clase*/
+
+.card .line{
+  background: #03818d;
+  display: inline-block;
+  margin: 0 0;
+  margin: auto;
+  transition-duration: 0.3s;
+  z-index: 1;
+}
+
+
+/*cambiar color a las flechas finales de cada seccion*/
+.accordion-button:is(.collapsed)::after {  /*.colapsed after que la flecha quede hacia abajo*/
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  box-shadow: none;
+  background-color: #fff;
+}
+
+/*estado actual*/
+.accordion-button:last-child  {
+  color: #fff !important;
+  background-color:#2B318F;
+  font-size: 18px;
+}
+
+.icon-news{
+  width:80px;
+}
+
+.linea-lateral {
+  position: relative;
+}
+
+.linea-lateral::before,
+.linea-lateral::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50px; /* Ancho de las líneas */
+  height: 1px; /* Grosor de las líneas */
+  background-color: rgb(243, 240, 240); /* Color de las líneas */
+  margin-top: -0.5px; /* La mitad del grosor de las líneas para centrarlas verticalmente */
+}
+
+.linea-lateral::before {
+  left: -60px; /* Posiciona la línea a la izquierda de la palabra */
+}
+
+.linea-lateral::after {
+  right: -60px; /* Posiciona la línea a la derecha de la palabra */
+}
+
+
+
+
+
+
+
+
+
+
+
+
