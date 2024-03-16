@@ -1,0 +1,49 @@
+@media (max-width: 576px){ 
+    .title-banner{
+        font-size: 20px;
+    }
+
+   .col-header{
+    padding-top: 140px;
+   }
+   .logo1{
+    width: 380px;
+   }
+
+   .logo-footer{
+    width:250px;
+   }
+
+   .paq{
+    padding-bottom: 50px;
+   }
+
+   .overlay{
+    top:0%;
+   }
+
+   .linea-lateral::before,
+   .linea-lateral::after {
+    width: 25px;
+   }
+
+   .linea-lateral::before {
+    left: -25px; /* Posiciona la línea a la izquierda de la palabra */
+  }
+
+  .linea-lateral::after {
+    right: -25px; /* Posiciona la línea a la derecha de la palabra */
+  }
+  .border-right {
+    display: none !important;
+}
+
+.animation1{
+    width: 200px;
+}
+
+} 
+
+
+
+
