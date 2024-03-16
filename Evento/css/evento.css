@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: 'Syne', sans-serif;
+}
+.video-head{
+    position: relative;
+    flex: 1; /* Hace que el encabezado ocupe todo el espacio vertical disponible */
+    width:100%; 
+}
+video{
+     object-fit: cover;  
+}
+
+.video-head video {
+    margin-bottom: -6px; /*elimina espacios en blanco entre el video y el shape */
+}
+
+.custom-shape-divider-top-1710389545 {
+    margin-top: -1px; /*elimina espacios en blanco entre el video y el shape*/
+}
+
+.video-head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* color de fondo semitransparente */
+     /*backdrop-filter: blur(-3px);* aplicar desenfoque */
+    z-index: 1; /* asegurarse de que la capa esté delante del video */
+    background-blend-mode: multiply;
+}
+
+footer {
+    background-color: #ffff;
+    font-size: 20px;
+    position: relative; /* Agrega posición relativa para el div que contiene el shape divider */
+}
+
+/* Estilo para el shape divider */
+.custom-shape-divider-top-1710389545 svg {
+    fill: rgba(8, 54, 31, 0.973); /* Cambia el color de relleno del shape divider a verde */
+}
+
+.linea-1 {
+    border-top: 1px solid rgba(8, 54, 31, 0.973);
+    height: 2px;
+    max-width: 200px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
+footer{
+    background-color: #f4ede8;
+}
+
+.fondo-all{
+    background-color: #f4ede8;
+}
+
+.icon-redes{
+    font-size: 30px;
+}
+
+.img-green{
+    height: 37.35rem;
+    position: relative;
+    width: 89rem;
+}
+
+.fondo1{
+    background-color: rgba(11, 39, 25, 0.918);
+}  
+    
+.overlay {
+    position: absolute;
+    top: 30%; /* Ajusta la posición vertical del texto */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 2em; /* Ajusta el tamaño de la fuente según sea necesario */
+    z-index: 1;
+}
+
+.banner{
+    background-image: url("../imagenes/green2.jpg");
+    background-size: cover;
+    background-position: center ;
+    height: 100vh;
+
+}
+
+.icons{
+    width:15%;
+}
+
+.icons1{
+    width:15%;
+}
+
+.linea {
+    border-top: 1px solid rgba(8, 54, 31, 0.973);
+    height: 2px;
+    max-width: 93%;
+    padding: 0;
+    margin: 60px auto 0 auto;
+}
+
+.form5{
+    display:inline-flex;
+}
+
+.text{
+    display: inline-block;
+}
+
+.btnes1{
+    background-color:rgba(8, 54, 31, 0.973);
+    color: #fff;
+}
+
+
+.fondo{
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.678);
+    background-color:rgba(44, 43, 43, 0.404);
+    background-blend-mode: multiply;
+    padding: 20px 90px 20px 90px; 
+}
+
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 15px 12px;
+    border: 2px solid #ccc;
+    border-top: none;
+    background-image: -webkit-linear-gradient();
+    background-blend-mode: multiply;  
+}
+
+/* El efecto de animación desvanecimiento tarda 2 segundos al entrar a cada pestaña */
+
+.tabcontent {
+    animation: efect1 2s;
+}
+
+.banner-fondo{
+    background-image: url("../imagenes/green2.jpg");
+    background-size: cover;
+    background-position: center ;
+    height: 60vh;
+    background-attachment: fixed;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.678);
+    background-color:rgba(26, 6, 6, 0.692)
+}
+
+.goto-top {  
+    position: fixed;
+    bottom: 30px;
+    right: 20px;     /*para que el boton de scrolltop se ponga del lado derecho*/
+    width: 50px;
+    height: 30px;
+    background-color: none;
+}
+
+a{
+    text-decoration: none;
+    color:black ;
+}
+
+.opt-3 {
+    content: " →"; 
+    color: #0a0a0a !important;
+}
+.opt-3:hover::after{
+    content: " →"; 
+    color: #0a0a0a !important;
+}
+p{
+    font-size: 18px;
+}
+
+#inscriptionTxt{
+    border-radius: 5px;
+    border-color: rgba(8, 54, 31, 0.973);
+}
+
+div.animacion:hover i {
+    transition: all 1s ease-in-out;
+    transform: rotate(360deg);
+    background-color: purple;
+}
+
+
+/* AQUI VAN LOS ESTILOS DEL EFECTO imagenes*/
+
+.box{
+    /*posicion de la caja que debe respetarse*/
+    position: relative
+}
+
+.efecto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; /*si le pongo end o start, el boton de ver más cambia de posicion dentro de la imagen, hacia arriba o abajo*/
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+/*efecto que se aplica al pasar el mouse sobre las fotos*/
+
+.box:hover .efecto{
+    transform: scale(1);    
+}
+  
+.btnes1:hover{
+    color:white;
+}
+
+
+/*para agregar la linea vertical en cada seccion del tab*/
+.linea-lateral {
+    position: relative;
+}
+
+.linea-lateral::before {
+    content: '';
+    position: absolute;
+    left: calc(100% + 10px); /* Ajusta el espacio después de la palabra */
+    top: 50%; /* Posiciona la línea en el centro vertical */
+    width: 1px; /* Grosor de la línea */
+    height: 40px; /* Longitud de la línea */
+    background-color: #141414; /* Color de la línea */
+    margin-top: -20px; /* Mitad de la altura para centrar verticalmente */
+}
+
+/*cambiar la propiedad fill por # hexadecimal*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%rgba(0, 0, 0, 0.5);' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%rgba(0, 0, 0, 0.5);' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.animation-foto{
+    width:120px;
+}
